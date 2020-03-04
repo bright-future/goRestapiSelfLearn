@@ -8,3 +8,9 @@ type Employee struct {
 }
 
 var Employees []Employee
+
+
+type NewEmployeeResponse struct {
+	Source string `json:"source"`
+	EmployeeName string `json:"employeeName"`
+}

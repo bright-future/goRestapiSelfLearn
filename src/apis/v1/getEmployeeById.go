@@ -39,9 +39,7 @@ func GetEmployeeByIdHandler(w http.ResponseWriter, r *http.Request){
 		fmt.Fprintf(w, "unable to serve");
 		return
 	}
-	fmt.Println(response)
 	json.NewEncoder(w).Encode(response)
-	// fmt.Fprintf(w, json.NewEncoder(w).Encode(Articles))
 	return
 }
 
